@@ -1,0 +1,16 @@
+* {
+    font-family: "Inter", sans-serif;
+    color: "#fff";
+    /* font-size: 1rem; */
+  }
+  body{
+    font-size: 10px;
+    font-weight: 500;
+    color: "#fff";
+  
+  }
+  @media (min-width: "1024") {
+    body{
+      font-size: 16px;
+    }
+  }
