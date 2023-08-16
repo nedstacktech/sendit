@@ -1,9 +1,10 @@
 * {
   font-family: "Inter", sans-serif;
+  color: "#fff";
   /* font-size: 1rem; */
 }
 body{
-  font-size: 8px;
+  font-size: 12px;
 }
 @media (min-width: "1024") {
   body{
