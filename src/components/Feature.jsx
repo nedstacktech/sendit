@@ -4,12 +4,20 @@ import Button from "./Button";
 
 export default function Feature() {
   return (
-    <>
-      <Box my="8" px="8">
-        <Heading as="h2" fontSize={"1.3rem"} mb="4">
+    <Flex
+      as="section"
+      id="feature"
+      flexDir={{ base: "column", md: "row" }}
+      gap="8"
+      my={["8", "16", "24"]}
+      px={["8", "12", "16", "24"]}
+      justifyContent={"space-between"}
+    >
+      <Box w={{ base: "100%", md: "40%" }} mt="4">
+        <Heading as="h2" fontSize={"clamp(1.3rem, 4vw, 3rem)"} mb={["4", "6"]}>
           Key Feature
         </Heading>
-        <Heading as="h4" fontSize={".8rem"} mb="2">
+        <Heading as="h4" fontSize="clamp(.8rem, 2vw, 2rem)" mb="2">
           Earn Passive Income
         </Heading>
         <Text mb="4">
@@ -26,11 +34,13 @@ export default function Feature() {
         </Text>
       </Box>
       <Box
-        mx="6"
-        p="2"
+        transform={"translateX(-1rem)"}
+        py={["2", "4"]}
+        px={{ base: "4", md: "12" }}
+        w={{ base: "100%", md: "50%" }}
         bg="linear-gradient(96.22deg, rgba(162, 255, 69, 0.5) 15.08%, rgba(217, 217, 217, 0) 54.91%)"
       >
-        <Heading as="h3" fontSize={"1rem"} mb="4">
+        <Heading as="h3" fontSize={"clamp(1rem, 2.5vw, 2.5rem)"} mb="4">
           Get ready to embark on a wild ride with $SENDIT
         </Heading>
         <Text as="p">
@@ -47,6 +57,6 @@ export default function Feature() {
           <Img src="/imgs/world.jpg" w="clamp(4.2rem, 20%, 7.5rem)" />
         </Flex>
       </Box>
-    </>
+    </Flex>
   );
 }

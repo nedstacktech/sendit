@@ -10,8 +10,18 @@ export default function Masterminds() {
     { img: "/imgs/team5.jpg", title: "CTO", name: "Dirk Grace" },
   ];
   return (
-    <Box bg="#A2FF450D" p="6">
-      <Heading as="h2" fontSize={"1.2rem"} mb="4" lineHeight={"1.2rem"}>
+    <Box
+      bg="#A2FF450D"
+      p={["6", "8"]}
+      w={{ md: "45%" }}
+      // pl={["8", "12", "16", "24"]}
+    >
+      <Heading
+        as="h2"
+        textAlign={{ base: "left", md: "center" }}
+        fontSize="clamp(1.2rem, 1.7vw, 2.3rem)"
+        mb="4"
+      >
         Meet The Unshakable Minds Behind $SENDIT
       </Heading>
       <Text>
@@ -23,7 +33,7 @@ export default function Masterminds() {
         built on integrity and vision. Join us and experience the future of
         crypto, lead by a team you can unequivocally rely on.
       </Text>
-      <Flex gap="8" flexWrap={"wrap"} mt={"4"}>
+      <Flex gap="8" flexWrap={"wrap"} my={"8"} justifyContent={"center"}>
         {masterminds.map(({ name, title, img }, index) => (
           <Flex
             flexDir={"column"}
@@ -35,12 +45,12 @@ export default function Masterminds() {
             <Img
               src={img}
               alt={`${title} image`}
-              w="2.4rem"
-              h="2.4rem"
+              w="clamp(2.4rem, 5vw, 5rem)"
+              h="clamp(2.4rem, 5vw, 5rem)"
               borderRadius={"50%"}
               mb="2"
             />
-            <Heading as="h5"  fontSize={".8rem"}>
+            <Heading as="h5" fontSize="clamp(1rem, 1.5vw, 2rem)">
               {title}
             </Heading>
             <Text>{name}</Text>

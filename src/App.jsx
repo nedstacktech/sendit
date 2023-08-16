@@ -1,6 +1,14 @@
 import "./App.css";
-import { Box } from "@chakra-ui/react";
-import { Navbar, Jumbotron, Feature, HowToJoin, Masterminds, Faq, Footer } from "./components";
+import { Box, Flex } from "@chakra-ui/react";
+import {
+  Navbar,
+  Jumbotron,
+  Feature,
+  HowToJoin,
+  Masterminds,
+  Faq,
+  Footer,
+} from "./components";
 
 function App() {
   return (
@@ -9,8 +17,16 @@ function App() {
       <Jumbotron />
       <Feature />
       <HowToJoin />
-      <Masterminds />
-      <Faq />
+      <Flex
+      as="section"
+      id="masterminds"
+        flexDir={{ base: "column", md: "row" }}
+        justifyContent={"space-between"}
+        my={{base: "4", md: "20"}}
+      >
+        <Masterminds />
+        <Faq />
+      </Flex>
       <Footer />
     </Box>
   );

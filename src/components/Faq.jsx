@@ -41,20 +41,20 @@ export default function Faq() {
     },
   ];
   return (
-    <Box p="8">
-      <Heading as="h3" fontSize={"1.3rem"} mb="2">
+    <Box p="8" w={{md: "45%"}}>
+      <Heading as="h3" fontSize="clamp(1.3rem, 1.7vw, 2.3rem)" mb="2">
         Frequently asked questions
       </Heading>
       <Box>
         <Accordion allowToggle>
           {faqs.map(({ question, answer }, index) => (
-            <AccordionItem border={"0"} >
+            <AccordionItem border={"0"} key={index}>
               {({ isExpanded }) => (
                 <>
                   <AccordionButton
                   px="0"
                     gap="2"
-                    fontSize={".8rem"}
+                    fontSize="clamp(.8rem, 1.2vw, 1.8rem)"
                     fontWeight={"bold"}
                   >
                     <Text flex="1" textAlign={"left"}>

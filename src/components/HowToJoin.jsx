@@ -4,24 +4,39 @@ import Button from "./Button";
 
 export default function HowToJoin() {
   return (
-    <Box my="8" px="6">
+    <Box my="8" px={["8", "12", "16", "24"]} as="section" id="howtojoin">
       <Flex flexDir={"column"} mb="10" gap="1" textAlign={"right"}>
-        <Heading as="h2" fontSize={"1.3rem"}>
+        <Heading as="h2" fontSize={"clamp(1.3rem, 4vw, 3rem)"}>
           How To Join
         </Heading>
-        <Heading as="h3" fontSize={"1rem"}>
+        <Heading as="h3" fontSize="clamp(1rem, 2.5vw, 2.5rem)">
           The Blockchain Revolution with Us
         </Heading>
         <Text color={"whiteAlpha.500"}>
           JOIN AND EXPERIENCE THE FUTURE OF CRYPTO CURRENCY WITH $SENDIT
         </Text>
       </Flex>
-      <Flex alignItems={"top"} gap="2" justifyContent={"space-between"}>
+      <Flex mb={{ base: "4", md: "16" }} flexDir={"column"}>
         <Box
-          p="2"
-          bg="linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%)"
+          mb="6"
+          display={{ base: "none", md: "block" }}
+          w="20rem"
+          h="2rem"
+          bg="linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%);"
+        />
+        <Box
+          ml={{ base: "0", md: "clamp(5rem, 7%, 7rem)" }}
+          py="2"
+          px="4"
+          transform={"translateX(-1rem)"}
+          maxW={{ md: "60%" }}
+          bg={{
+            base:
+              "linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%)",
+            md: "none",
+          }}
         >
-          <Heading as="h4" fontSize={".8rem"} mb="2">
+          <Heading as="h4" fontSize="clamp(.8rem, 2vw, 2rem)" mb="2">
             Purchase $SENDIT Coin
           </Heading>
           <Text>
@@ -29,16 +44,31 @@ export default function HowToJoin() {
             holding our coin! ($SENDIT).
           </Text>
         </Box>
-        <Box w="10rem">
-          <Button text={"Learn More"} />
-        </Box>
       </Flex>
-      <Flex ml="25%">
+      <Flex
+        ml={{ base: "0", md: "clamp(7rem, 15%, 15rem)" }}
+        mb={{ base: "4", md: "16" }}
+        flexDir={"column"}
+        transform={{ base: "translateX(-1rem)", md: "none" }}
+      >
         <Box
+          mb="6"
+          display={{ base: "none", md: "block" }}
+          w="20rem"
+          h="2rem"
+          bg="linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%);"
+        />
+        <Box
+          ml={{ base: "clamp(5rem, 10%, 7rem)", md: "clamp(5rem, 7%, 7rem)" }}
           p="2"
-          bg="linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%)"
+          maxW={{ md: "60%" }}
+          bg={{
+            base:
+              "linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%)",
+            md: "none",
+          }}
         >
-          <Heading as="h4" fontSize={".8rem"} mb="2">
+          <Heading as="h4" fontSize="clamp(.8rem, 2vw, 2rem)" mb="2">
             Earn Airdrop Every 5 Days
           </Heading>
           <Text>
@@ -47,15 +77,29 @@ export default function HowToJoin() {
           </Text>
         </Box>
       </Flex>
-      <Flex alignItems={"end"} gap="8" justifyContent={"space-between"}>
-        <Box w="100%">
-          <Button text={"BUY $SENDIT"} type={"primary"} />
-        </Box>
+      <Flex
+        ml={{ base: "0", md: "clamp(20rem, 30%, 30rem)" }}
+        mb={{ base: "2", md: "12" }}
+        flexDir={"column"}
+        transform={{ base: "translateX(-1rem)", md: "none" }}
+      >
         <Box
+          mb="6"
+          display={{ base: "none", md: "block" }}
+          w="20rem"
+          h="2rem"
+          bg="linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%);"
+        />
+        <Box
+          ml={{md: "clamp(5rem, 7%, 7rem)" }}
           p="2"
-          bg="linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%)"
+          bg={{
+            base:
+              "linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%)",
+            md: "none",
+          }}
         >
-          <Heading as="h4" fontSize={".8rem"} mb="2">
+          <Heading as="h4" fontSize="clamp(.8rem, 2vw, 2rem)" mb="2">
             Brace Your Self For Jaw - dropping Surprises
           </Heading>
           <Text>
@@ -63,6 +107,9 @@ export default function HowToJoin() {
             us and let the gifting galore begin, with $SENDIT.
           </Text>
         </Box>
+      </Flex>
+      <Flex w="100%" mt="4" justifyContent={"center"}>
+        <Button text={"BUY $SENDIT"} type={"primary"} />
       </Flex>
     </Box>
   );
