@@ -44,7 +44,7 @@ export default function Feature() {
         </Text>
         <Flex mt="4" justifyContent={"space-between"} alignItems={"center"}>
           <Button text="BUY $SENDIT" type={"primary"} />
-          <Img src="/imgs/sendit.jpg" w="clamp(4.2rem, 20%, 7.5rem)" />
+          <Img src="/imgs/world.jpg" w="clamp(4.2rem, 20%, 7.5rem)" />
         </Flex>
       </Box>
     </>

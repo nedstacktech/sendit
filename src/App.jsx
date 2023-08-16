@@ -1,6 +1,6 @@
 import "./App.css";
 import { Box } from "@chakra-ui/react";
-import { Navbar, Jumbotron, Feature, HowToJoin, Masterminds } from "./components";
+import { Navbar, Jumbotron, Feature, HowToJoin, Masterminds, Faq, Footer } from "./components";
 
 function App() {
   return (
@@ -10,6 +10,8 @@ function App() {
       <Feature />
       <HowToJoin />
       <Masterminds />
+      <Faq />
+      <Footer />
     </Box>
   );
 }
