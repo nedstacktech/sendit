@@ -1,6 +1,7 @@
 import { Box, Flex, Heading, Img, Text } from "@chakra-ui/react";
 import React from "react";
 import Button from "./Button";
+import Uniswap from "./Uniswap";
 
 export default function Feature() {
   return (
@@ -17,6 +18,7 @@ export default function Feature() {
         <Heading as="h2" fontSize={"clamp(1.3rem, 4vw, 3rem)"} mb={["4", "6"]}>
           Key Feature
         </Heading>
+        <Uniswap />
         <Heading as="h4" fontSize="clamp(.8rem, 2vw, 2rem)" mb="2">
           Earn Passive Income
         </Heading>
@@ -54,6 +56,7 @@ export default function Feature() {
         </Text>
         <Flex mt="4" justifyContent={"space-between"} alignItems={"center"}>
           <Button text="BUY $SENDIT" type={"primary"} />
+          <Uniswap />
           <Img src="/imgs/world.jpg" w="clamp(4.2rem, 20%, 7.5rem)" />
         </Flex>
       </Box>
