@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Img, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React from "react";
 
 export default function Masterminds() {
@@ -14,6 +15,9 @@ export default function Masterminds() {
       bg="#A2FF450D"
       p={["6", "8"]}
       w={{ md: "45%" }}
+      as={motion.div}
+      initial={{ transform: "translateX(-50%)", opacity: ".2" }}
+      whileInView={{ transform: "translateX(0)", opacity: "1" }}
       // pl={["8", "12", "16", "24"]}
     >
       <Heading

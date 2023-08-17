@@ -1,11 +1,21 @@
 import { Box, Flex, Heading, Text } from "@chakra-ui/react";
 import React from "react";
 import Button from "./Button";
+import { motion } from "framer-motion";
 
 export default function HowToJoin() {
   return (
     <Box my="8" px={["8", "12", "16", "24"]} as="section" id="howtojoin">
-      <Flex flexDir={"column"} mb="10" gap="1" textAlign={"right"}>
+      <Flex
+        as={motion.div}
+        initial={{ transform: "translateY(5vh)", opacity: ".2" }}
+        whileInView={{ transform: "translateY(0vh)", opacity: "1" }}
+        transition={"all .5s ease"}
+        flexDir={"column"}
+        mb="10"
+        gap="1"
+        textAlign={"right"}
+      >
         <Heading as="h2" fontSize={"clamp(1.3rem, 4vw, 3rem)"}>
           How To Join
         </Heading>
@@ -22,6 +32,15 @@ export default function HowToJoin() {
           display={{ base: "none", md: "block" }}
           w="20rem"
           h="2rem"
+          as={motion.div}
+          initial={{ height: "0", opacity: ".2" }}
+          whileInView={{ height: "2rem", opacity: "1" }}
+          transition={{
+            type: "spring",
+            damping: 300,
+            delayChildren: 0.5,
+            staggerDirection: -1,
+          }}
           bg="linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%);"
         />
         <Box
@@ -29,6 +48,9 @@ export default function HowToJoin() {
           py="2"
           px="4"
           transform={"translateX(-1rem)"}
+          as={motion.div}
+          initial={{ transform: "translateX(-10vw)", opacity: ".2" }}
+          whileInView={{ transform: "translateX(-1rem)", opacity: "1" }}
           maxW={{ md: "60%" }}
           bg={{
             base:
@@ -56,11 +78,23 @@ export default function HowToJoin() {
           display={{ base: "none", md: "block" }}
           w="20rem"
           h="2rem"
+          as={motion.div}
+          initial={{ height: "0", opacity: ".2" }}
+          whileInView={{ height: "2rem", opacity: "1" }}
+          transition={{
+            type: "spring",
+            damping: 300,
+            delayChildren: 0.5,
+            staggerDirection: -1,
+          }}
           bg="linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%);"
         />
         <Box
           ml={{ base: "clamp(5rem, 10%, 7rem)", md: "clamp(5rem, 7%, 7rem)" }}
           p="2"
+          as={motion.div}
+          initial={{ transform: "translateX(10vw)", opacity: ".2" }}
+          whileInView={{ transform: "translateX(-1rem)", opacity: "1" }}
           maxW={{ md: "60%" }}
           bg={{
             base:
@@ -88,11 +122,23 @@ export default function HowToJoin() {
           display={{ base: "none", md: "block" }}
           w="20rem"
           h="2rem"
+          as={motion.div}
+          initial={{ height: "0", opacity: ".2" }}
+          whileInView={{ height: "2rem", opacity: "1" }}
+          transition={{
+            type: "spring",
+            damping: 300,
+            delayChildren: 0.5,
+            staggerDirection: -1,
+          }}
           bg="linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%);"
         />
         <Box
-          ml={{md: "clamp(5rem, 7%, 7rem)" }}
+          ml={{ md: "clamp(5rem, 7%, 7rem)" }}
           p="2"
+          as={motion.div}
+          initial={{ transform: "translateX(-10vw)", opacity: ".2" }}
+          whileInView={{ transform: "translateX(0rem)", opacity: "1" }}
           bg={{
             base:
               "linear-gradient(94.83deg, rgba(162, 255, 69, 0.5) -0.62%, rgba(217, 217, 217, 0) 53.89%)",

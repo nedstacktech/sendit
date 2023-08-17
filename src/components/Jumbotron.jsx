@@ -9,6 +9,7 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import Button from "./Button";
+import { motion } from "framer-motion";
 
 function Jumbotron() {
   return (
@@ -17,8 +18,14 @@ function Jumbotron() {
         flexDir={["column", "row"]}
         justifyContent={["center", "space-between"]}
         alignItems={["center"]}
+        gap="4"
       >
-        <Box>
+        <Box
+          as={motion.div}
+          initial={{ transform: "translateY(2vh)", opacity: ".2" }}
+          whileInView={{ transform: "translateY(0vh)", opacity: "1" }}
+          transition={"all .3s ease"}
+        >
           <Heading
             as="h1"
             fontSize={["1.2rem", "2rem", "3rem", "4rem"]}
@@ -32,13 +39,22 @@ function Jumbotron() {
             Are you ready to launch your offering?
           </Text>
         </Box>
-        <Box w="clamp(6.25rem, 30%, 25rem)">
-          <Img src="/imgs/sendit.jpg" w="100%" />
+        <Box
+          w="clamp(6.25rem, 30%, 25rem)"
+          as={motion.div}
+          initial={{ scale: 0, rotate: 180 }}
+          whileInView={{ rotate: 0, scale: 1 }}
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+        >
+          <Img src="/imgs/sendit.jpg" w="100%" transitionDelay={"1s"} />
         </Box>
       </Flex>
       <Flex gap={["4", "12"]} mt="4" justifyContent={["center", "flex-start"]}>
         <Button text={"BUY $SENDIT"} type="primary" />
-        <Button text={"Learn More"} />
       </Flex>
     </Box>
   );

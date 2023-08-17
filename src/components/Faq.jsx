@@ -10,6 +10,7 @@ import {
   ListItem,
   Text,
 } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React from "react";
 
 export default function Faq() {
@@ -41,7 +42,13 @@ export default function Faq() {
     },
   ];
   return (
-    <Box p="8" w={{md: "45%"}}>
+    <Box
+      p="8"
+      w={{ md: "45%" }}
+      as={motion.div}
+      initial={{ transform: "translateX(50%)", opacity: ".2" }}
+      whileInView={{ transform: "translateX(0)", opacity: "1" }}
+    >
       <Heading as="h3" fontSize="clamp(1.3rem, 1.7vw, 2.3rem)" mb="2">
         Frequently asked questions
       </Heading>
@@ -52,7 +59,7 @@ export default function Faq() {
               {({ isExpanded }) => (
                 <>
                   <AccordionButton
-                  px="0"
+                    px="0"
                     gap="2"
                     fontSize="clamp(.8rem, 1.2vw, 1.8rem)"
                     fontWeight={"bold"}
