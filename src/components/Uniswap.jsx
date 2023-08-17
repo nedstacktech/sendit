@@ -42,7 +42,7 @@ const Uniswap = () => {
           },
         }}
       >
-        <Spinner w="20" h="20" color="primary" />
+        <Spinner w="10" h="10" color="primary" />
         <iframe
           title="Uniswap Interface"
           id="iframe-id"
