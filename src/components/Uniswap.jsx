@@ -19,20 +19,7 @@ const Uniswap = () => {
         h="clamp(24rem, 55vh, 30rem)"
         overflow={"hidden"}
         borderRadius={"3xl"}
-        as={motion.div}
-        initial={{ opacity: 0, scale: 0.5 }}
-        whileInView={{ opacity: 1, scale: 1.01 }}
-        exit={{opacity: 0, scale: .2}}
-        transition={{
-          duration: 0.3,
-          ease: [0, 0.71, 0.2, 1.01],
-          scale: {
-            type: "spring",
-            damping: 50,
-            stiffness: 100,
-            restDelta: 0.001,
-          },
-        }}
+        
       >
         <Spinner w="10" h="10" color="primary" />
         <iframe
