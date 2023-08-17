@@ -22,8 +22,8 @@ export default function HowToJoin() {
         <Heading as="h3" fontSize="clamp(1rem, 2.5vw, 2.5rem)">
           The Blockchain Revolution with Us
         </Heading>
-        <Text color={"whiteAlpha.500"}>
-          JOIN AND EXPERIENCE THE FUTURE OF CRYPTO CURRENCY WITH $SENDIT
+        <Text color={"whiteAlpha.500"} textTransform={"uppercase"}>
+        Don't Play With Fire, Play With Cryptocurrency like $sendit
         </Text>
       </Flex>
       <Flex mb={{ base: "4", md: "16" }} flexDir={"column"}>
@@ -146,7 +146,7 @@ export default function HowToJoin() {
           }}
         >
           <Heading as="h4" fontSize="clamp(.8rem, 2vw, 2rem)" mb="2">
-            Brace Your Self For Jaw - dropping Surprises
+            Brace Your Self For jaw dropping Surprises
           </Heading>
           <Text>
             Don’t just dream about the price; make it yours in a heartbeat! Join

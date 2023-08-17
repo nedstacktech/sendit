@@ -32,6 +32,7 @@ export default function Footer() {
           alignItems={"center"}
         >
           <Link
+          target="_blank"
             href=""
             w="clamp(5rem, 30%, 10rem)"
             _hover={{ transform: "scale(1.1)" }}
@@ -40,6 +41,7 @@ export default function Footer() {
             <Img src="/imgs/tel.jpg" alt="telegram img" />
           </Link>
           <Link
+          target="_blank"
             href="https://twitter.com/Eth_SendIt"
             _hover={{ transform: "scale(1.1)" }}
             transition={"all .2s ease"}

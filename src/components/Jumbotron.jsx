@@ -32,11 +32,10 @@ function Jumbotron() {
             textAlign={["center", "left"]}
             textTransform={"uppercase"}
           >
-            <Text as="p">coin-based</Text>
             <Text as="p">$sendit launch</Text>
           </Heading>
           <Text textAlign={["center", "left"]} opacity={".5"}>
-            Are you ready to launch your offering?
+          I Wouldn't Leave The House Without Exchange.
           </Text>
         </Box>
         <Box

@@ -4,11 +4,11 @@ import React from "react";
 
 export default function Masterminds() {
   const masterminds = [
-    { img: "/imgs/team1.jpg", title: "CEO", name: "Pieter Hendrik" },
-    { img: "/imgs/team2.jpg", title: "CFO", name: "Aiden Lucas" },
-    { img: "/imgs/team3.jpg", title: "CIO", name: "Noah Isa" },
+    { img: "/imgs/team1.jpg", title: "CEO", name: "Pieter Georgia" },
+    { img: "/imgs/team2.jpg", title: "CFO", name: "Aiden Williams" },
+    { img: "/imgs/team3.jpg", title: "CIO", name: "Noah Kaylee" },
     { img: "/imgs/team4.jpg", title: "CMO", name: "Benjamin Anna" },
-    { img: "/imgs/team5.jpg", title: "CTO", name: "Dirk Grace" },
+    { img: "/imgs/team5.jpg", title: "CTO", name: "Dirk Jones" },
   ];
   return (
     <Box
@@ -16,7 +16,7 @@ export default function Masterminds() {
       p={["6", "8"]}
       w={{ md: "45%" }}
       as={motion.div}
-      initial={{ transform: "translateX(-50vw)", opacity: ".2" }}
+      initial={{ transform: "translateX(-50%)", opacity: ".2" }}
       whileInView={{ transform: "translateX(0)", opacity: "1" }}
       // pl={["8", "12", "16", "24"]}
     >
@@ -31,7 +31,7 @@ export default function Masterminds() {
       <Text>
         A Team that redefines trust in the crypto sphere! With a collective
         brilliance that’s as solid as blockchain, Our Team is the corner stone
-        of transparency, innovation, and unwavering commitment. Each member
+        of transparency, innovation, and unwavering commitment. Each member's
         expertise form a symphony of reliability, ensuring your investment
         safety and growth. When you invest in $SENDIT, you are part of a family
         built on integrity and vision. Join us and experience the future of

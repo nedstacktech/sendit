@@ -37,12 +37,12 @@ export default function Feature() {
             Each person that holds minimum $100 of our token $SENDIT will
             receive or be airdropped $15 worth of ETH every 5 days straight into
             their wallet! So every $100 you hold of our token, you will get
-            dollars every 5 days. There is no limit to how much you can hold and
+            15 dollars ($15) every 5 days. There is no limit to how much you can hold and
             be rewarded so feel free to go crazy!
           </Text>
           <Text>
             As an example, if you were to buy $1000 of $SENDIT you will receive
-            $150 of ETH every 5 days! Is n’t this the craziest opportunity? It’s
+            $150 of ETH every 5 days! Isn’t this the craziest opportunity? It’s
             a no brainer pretty much! Your time to become filthy rich is here!
           </Text>
         </Box>
@@ -65,7 +65,7 @@ export default function Feature() {
           whileInView={{ transform: "translateY(0vw)", opacity: 1 }}
         >
           The ultimate crypto meme coin that’s all about seizing the moment and
-          embracing the chaos and universe. With it playful spirit and a
+          embracing the chaos and universe. With it's playful spirit and a
           community that knows how to live to the fullest, $SENDIT isn’t just a
           coin - it’s a movement. Join us in sending convention flying out the
           window and diving head first into the exhilarating world of

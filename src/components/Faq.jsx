@@ -46,7 +46,7 @@ export default function Faq() {
       p="8"
       w={{ md: "45%" }}
       as={motion.div}
-      initial={{ transform: "translateX(50vw)", opacity: ".2" }}
+      initial={{ transform: "translateX(50%)", opacity: ".2" }}
       whileInView={{ transform: "translateX(0)", opacity: "1" }}
     >
       <Heading as="h3" fontSize="clamp(1.3rem, 1.7vw, 2.3rem)" mb="2">
