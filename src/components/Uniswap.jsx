@@ -34,6 +34,7 @@ const Uniswap = () => {
           },
         }}
       >
+        <Spinner w="10" h="10" color="primary" />
         <iframe
           title="Uniswap Interface"
           id="iframe-id"
