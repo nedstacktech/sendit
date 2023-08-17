@@ -25,6 +25,7 @@ function App() {
         <HowToJoin />
         <Flex
           as="section"
+          overflow={"hidden"}
           id="masterminds"
           flexDir={{ base: "column", md: "row" }}
           justifyContent={"space-between"}

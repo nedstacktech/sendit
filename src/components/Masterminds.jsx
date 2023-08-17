@@ -16,7 +16,7 @@ export default function Masterminds() {
       p={["6", "8"]}
       w={{ md: "45%" }}
       as={motion.div}
-      initial={{ transform: "translateX(-50%)", opacity: ".2" }}
+      initial={{ transform: "translateX(-50vw)", opacity: ".2" }}
       whileInView={{ transform: "translateX(0)", opacity: "1" }}
       // pl={["8", "12", "16", "24"]}
     >
