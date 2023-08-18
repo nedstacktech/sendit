@@ -28,7 +28,7 @@ const Uniswap = () => {
         pos="relative"
         w="clamp(18rem, 50vw, 30rem)"
         h="clamp(24rem, 55vh, 30rem)"
-        // overflow={"hidden"}
+        overflow={"hidden"}
         borderRadius={"3xl"}
         as={motion.div}
         initial={{ opacity: 0, scale: 0.5 }}
