@@ -18,7 +18,7 @@ export default function HowToJoin() {
       >
         <Text
           color={"primary"}
-          fontSize={"clamp(1.2rem, 1.5vw, 2rem)"}
+          fontSize={"clamp(.8rem, 1.2vw, 1.5rem)"}
           textTransform={"uppercase"}
         >
           Don't Play With Fire, Play With Cryptocurrency like $sendit
