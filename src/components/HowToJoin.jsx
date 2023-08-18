@@ -16,14 +16,12 @@ export default function HowToJoin() {
         gap="1"
         textAlign={"right"}
       >
-        <Heading as="h2" fontSize={"clamp(1.3rem, 4vw, 3rem)"}>
-          How To Join
-        </Heading>
-        <Heading as="h3" fontSize="clamp(1rem, 2.5vw, 2.5rem)">
-          The Blockchain Revolution with Us
-        </Heading>
-        <Text color={"whiteAlpha.500"} textTransform={"uppercase"}>
-        Don't Play With Fire, Play With Cryptocurrency like $sendit
+        <Text
+          color={"primary"}
+          fontSize={"clamp(1.2rem, 1.5vw, 2rem)"}
+          textTransform={"uppercase"}
+        >
+          Don't Play With Fire, Play With Cryptocurrency like $sendit
         </Text>
       </Flex>
       <Flex mb={{ base: "4", md: "16" }} flexDir={"column"}>
@@ -103,7 +101,7 @@ export default function HowToJoin() {
           }}
         >
           <Heading as="h4" fontSize="clamp(.8rem, 2vw, 2rem)" mb="2">
-            Earn Airdrop Every 5 Days
+            Earn Exclusive Airdrop Rewards every 5 days non-stop!
           </Heading>
           <Text>
             Unwrap the thrill of winning like never before - our crypto coin is

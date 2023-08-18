@@ -35,7 +35,7 @@ function Jumbotron() {
             <Text as="p">$sendit launch</Text>
           </Heading>
           <Text textAlign={["center", "left"]} opacity={".5"}>
-          I Wouldn't Leave The House Without Exchange.
+          Don't fade this one anon!
           </Text>
         </Box>
         <Box

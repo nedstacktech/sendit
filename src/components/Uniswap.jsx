@@ -1,10 +1,13 @@
-import { Box, Grid, Spinner } from "@chakra-ui/react";
-import React, { useContext } from "react";
+import { Box, Grid, Skeleton, Spinner } from "@chakra-ui/react";
+import React, { useContext, useState } from "react";
 import { UniswapContext } from "../App";
 import { motion } from "framer-motion";
 
 const Uniswap = () => {
-  const [setShowUniswap, showUniswap] = useContext(UniswapContext);
+  const [setShowUniswap] = useContext(UniswapContext);
+  const [hasLoaded, setHasLoaded] = useState(false);
+
+  let handleIframeLoaded = () => setHasLoaded(true);
   return (
     <Grid
       pos="fixed"
@@ -21,11 +24,11 @@ const Uniswap = () => {
         pos={"absolute"}
         inset="0"
       />
-      <Box
+      <Grid
         pos="relative"
         w="clamp(18rem, 50vw, 30rem)"
         h="clamp(24rem, 55vh, 30rem)"
-        overflow={"hidden"}
+        // overflow={"hidden"}
         borderRadius={"3xl"}
         as={motion.div}
         initial={{ opacity: 0, scale: 0.5 }}
@@ -41,14 +44,21 @@ const Uniswap = () => {
             restDelta: 0.001,
           },
         }}
+        placeItems={"center"}
       >
-        <Spinner w="10" h="10" color="primary" />
-        <iframe
-          title="Uniswap Interface"
-          id="iframe-id"
-          src="https://app.uniswap.org/#/swap?exactField=input&exactAmount=10&inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f"
-        />
-      </Box>
+        {!hasLoaded && (
+          <Spinner emptyColor="gray.500" speed=".65s" thickness=".4rem" size={"xl"} color="primary" />
+        ) }
+          <Skeleton isLoaded={hasLoaded}>
+
+            <iframe
+              title="Uniswap Interface"
+              id="iframe-id"
+              onLoad={handleIframeLoaded}
+              src="https://app.uniswap.org/#/swap?exactField=input&exactAmount=10&inputCurrency=0x6b175474e89094c44da98b954eedeac495271d0f"
+            />
+          </Skeleton>
+      </Grid>
     </Grid>
   );
 };

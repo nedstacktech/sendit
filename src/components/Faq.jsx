@@ -63,6 +63,8 @@ export default function Faq() {
                     gap="2"
                     fontSize="clamp(.8rem, 1.2vw, 1.8rem)"
                     fontWeight={"bold"}
+                    color={isExpanded && "primary"}
+                    transition={"background .3s ease"}
                   >
                     <Text flex="1" textAlign={"left"}>
                       {question}

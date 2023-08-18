@@ -4,11 +4,11 @@ import React from "react";
 
 export default function Masterminds() {
   const masterminds = [
-    { img: "/imgs/team1.jpg", title: "CEO", name: "Pieter Georgia" },
-    { img: "/imgs/team2.jpg", title: "CFO", name: "Aiden Williams" },
-    { img: "/imgs/team3.jpg", title: "CIO", name: "Noah Kaylee" },
-    { img: "/imgs/team4.jpg", title: "CMO", name: "Benjamin Anna" },
-    { img: "/imgs/team5.jpg", title: "CTO", name: "Dirk Jones" },
+    // { img: "/imgs/team1.jpg", title: "CEO", name: "Pieter Georgia" },
+    { img: "/imgs/team2.jpg", title: "CEO", name: "Marcel W" },
+    // { img: "/imgs/team3.jpg", title: "CIO", name: "Noah Kaylee" },
+    { img: "/imgs/team4.jpg", title: "Co-founder", name: "Claire P" },
+    // { img: "/imgs/team5.jpg", title: "CTO", name: "Dirk Jones" },
   ];
   return (
     <Box
@@ -43,14 +43,14 @@ export default function Masterminds() {
             flexDir={"column"}
             alignItems={"center"}
             key={index}
-            w="25%"
+            w="40%"
             textAlign={"center"}
           >
             <Img
               src={img}
               alt={`${title} image`}
-              w="clamp(2.4rem, 5vw, 5rem)"
-              h="clamp(2.4rem, 5vw, 5rem)"
+              w="clamp(3rem, 6vw, 6rem)"
+              h="clamp(3rem, 6vw, 6rem)"
               borderRadius={"50%"}
               mb="2"
             />

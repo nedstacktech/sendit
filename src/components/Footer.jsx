@@ -33,7 +33,7 @@ export default function Footer() {
         >
           <Link
           target="_blank"
-            href=""
+            href="https://t.me/ETHSendIT"
             w="clamp(5rem, 30%, 10rem)"
             _hover={{ transform: "scale(1.1)" }}
             transition={"all .2s ease"}
@@ -42,7 +42,7 @@ export default function Footer() {
           </Link>
           <Link
           target="_blank"
-            href="https://twitter.com/Eth_SendIt"
+            href="https://twitter.com/ETH_SendIT"
             _hover={{ transform: "scale(1.1)" }}
             transition={"all .2s ease"}
             w="clamp(5rem, 30%, 10rem)"
